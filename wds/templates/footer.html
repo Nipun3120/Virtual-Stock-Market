@@ -1,0 +1,290 @@
+{% load static %}
+        <!-- ---------- FOOTER --------- -->
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Spectral+SC:ital,wght@0,700;1,500&display=swap');
+    *{
+      margin: 0; padding: 0;
+      box-sizing: border-box;
+    }
+
+    ul li{
+      list-style-type: none;
+    }
+    footer{
+      background: #2d2f33;
+      width: 100vw;
+      height: 25vh;
+      /* padding: 20px; */
+    }  
+
+    footer .allcontent{
+      display: flex;
+      flex-flow: column;
+    }
+    .footer-heading{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+    }
+    .footer-heading h3{
+      color: #fd5949;
+    }
+    .rows {
+      background: #2d2f33;
+      display: flex;
+      flex-flow: row;
+      text-align: center;
+    }
+    .rows .cont {
+      width: 33.33%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .rows .team{
+      margin: 0 auto;
+
+    }
+    .rows .team a{
+      color: #ca6960;
+    }
+    .rows .team a:hover{
+      color: #fd5949;
+    }
+    /* ----------------------------------------------------- */
+
+    .name{
+      display: flex;
+      flex-direction: column;
+    }
+    .name h5{
+      color: #da665c;
+        font-size: 2rem;
+        font-family: 'Spectral SC', serif;
+      
+    }
+    .name-social .cont{
+      display: inline;
+    }
+
+    .Dev-contact{
+        font-size: 1.2rem;        
+    }
+
+
+    /* ----------------------- social icons ----------------------- */
+
+    .middle-social{
+      visibility: hidden;
+    }
+
+    .github{
+      background: #000; 
+    }
+    .github:hover i{
+      color: #000;
+      background: white;
+    }
+    .mail{
+      background-color: #ea4335;
+    }
+    .mail:hover{
+      background: white;
+    }
+    .mail:hover i{
+      color: #ea4335;
+    }
+
+    .linkedin:hover i{
+      color: #0082ca;
+      background: white;
+    }
+
+    .btn-instagram:hover i{
+      background: white;
+      
+    }
+    .btn-instagram:hover i{
+      color: #dc2c92;
+    }
+    
+    .github:visited{
+      background-color: #000;
+    }
+    .linkedin:visited {
+      background: #0082ca;
+    }
+    .btn-instagram:visited{
+      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    }
+    .mail:visited{
+      background: white;
+    }
+    .btn-floating i{
+      font-size: 1.5rem;
+    }
+
+      @media (max-width:720px ){
+        footer{
+          height: 25vh;
+        }
+        footer .rows {
+          flex-flow: column;
+          padding: 0 20px;
+        }
+        footer .rows .cont{
+          width: 100%;
+          padding: 30px 0;
+        }
+
+        /* logo */
+
+        .middle{
+          display: none;
+        }
+        .middle-social{
+          display: none;
+        }
+        .rows .team{
+          padding: 20px;
+        }
+      }
+
+
+
+
+  </style>
+
+</head>
+
+
+
+
+
+<!-- Footer -->
+<footer>
+  <div  class="col-xs-12 col-sm-8  col-md-8 col-lg-8 footer-heading" style="text-align: center;">
+    <h3 style="font-family: 'Spectral SC', serif;">Developer's Info</h3>
+  </div>
+
+
+  <div class="allcontent">
+    <div class="rows">
+      <div class="cont name">
+
+        <!-- --------- Rahul Goyal --------- -->
+        <div class="heading">
+          <h5>Rahul Goyal</h5>
+        </div>
+
+        <div class="name-social social">
+          <div class="cont">
+            <ul class="">
+              <li class="list-inline-item">
+                <a class="btn-floating mx-1 github" href="https://github.com/Rahulgoy" target="blank" >
+                  <i class="fab fa-github"> </i>
+                </a>
+              </li>
+
+              <li class="list-inline-item">
+                <a class="btn-floating btn-li mx-1 linkedin" href="https://www.linkedin.com/in/rahulgoy/" style="background: #0082ca;" target="blank">
+                  <i class="fab fa-linkedin-in"> </i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.instagram.com/rahulkugo/"  class="btn-floating btn-instagram mx-1 instagram" style="background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);  font-size: 1.7rem;" target="blank">
+                  <i class="fab fa-instagram"> </i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="mailto:rahulkumargoyal00@gmail.com " class="btn-floating btn-li mx-1 mail" target="blank">
+                  <i class="fas fa-envelope"></i>
+                </a>
+              </li>
+            </ul> 
+  
+          </div> 
+        </div>
+      </div>
+      
+        <!-- Social buttons Hidden -->
+      <div class="cont middle">
+          <ul class="middle-social">
+            <li class="list-inline-item">
+              <a class="btn-floating mx-1 facebook" href="https://www.facebook.com/econthapar" style="background: #3b5998; ">
+                <i class="fa fa-facebook-f"> </i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn-floating btn-youtube mx-1 youtube" href="https://www.youtube.com/channel/UCnyVX3sGVJEno_WwLouHXtA" style="background: #ff0000;">
+                <i class="fa fa-youtube-play" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn-floating btn-li mx-1 linkedin" href="https://www.linkedin.com/company/econclub/" style="background: #0082ca;">
+                <i class="fab fa-linkedin-in"> </i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.instagram.com/econ_tiet/"  class="btn-floating btn-instagram mx-1 instagram" style="background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);">
+                <i class="fab fa-instagram"> </i>
+              </a>
+            </li>
+          </ul> 
+
+      </div> 
+
+        <!-- --------- Nipun Verma --------- -->
+      <div class="cont name">
+
+        <div class="heading">
+          <h5>Nipun Verma</h5>
+        </div>
+
+        <div class="name-social social">
+          <div class="cont">
+            <ul class="">
+
+              <li class="list-inline-item">
+                <a class="btn-floating mx-1 github" href="https://github.com/nipun3120" target="blank" >
+                  <i class="fab fa-github"> </i>
+                </a>
+              </li>
+
+              <li class="list-inline-item">
+                <a class="btn-floating btn-li mx-1 linkedin" href="https://www.linkedin.com/in/nipun-verma-4885201a5/" style="background: #0082ca;" target="blank">
+                  <i class="fab fa-linkedin-in"> </i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.instagram.com/nipun3120/"  class="btn-floating btn-instagram mx-1 instagram" style="background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%); font-size: 1.7rem;" target="blank">
+                  <i class="fab fa-instagram"> </i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="mailto:nipunverma39@gmail.com " class="btn-floating btn-li mx-1 mail" target="blank">
+                  <i class="fas fa-envelope"></i>
+                </a>
+              </li>
+            </ul> 
+
+          </div> 
+        </div>
+      </div>  
+
+  </div>
+
+
+
+  <div class="rows">
+    <div class="team">
+      <a href="https://github.com/Rahulgoy/virtual-stock-market" style="font-family: 'Cardo', serif;">&copy; COPYRIGHT 2020</a>
+    </div>
+  </div>
+</div>
+</footer>
+<!-- Footer -->
